@@ -1,0 +1,168 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/**
+ * Basic typography style for copy text
+ */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("../../../../img/rectangle.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 500px;
+  background-color: #FAF8F5;
+}
+
+header.header {
+  display: flex;
+  margin: 28px 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+header.header nav.menu {
+  display: flex;
+}
+header.header nav.menu ul.ul {
+  display: flex;
+  list-style: none;
+  color: rgb(38, 64, 101);
+  gap: 30px;
+}
+header.header ul.menu-left {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 30px;
+}
+header.header ul.menu-left li a {
+  padding: 10px 20px;
+  font-weight: 300;
+}
+header.header ul.menu-left li:last-child a {
+  border-radius: 32px;
+  background-color: rgb(38, 64, 101);
+  text-decoration: none;
+  color: white;
+}
+header.header ul.menu-left li:nth-child(3) a {
+  border-radius: 32px;
+  text-decoration: underline;
+  color: rgb(38, 64, 101);
+}
+
+div.container {
+  margin: 0px 120px;
+  background-image: url("../../../img/spa-back.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  height: auto;
+}
+
+main {
+  padding-top: 70px;
+  background-image: url("../../../img/beauty-principal.png");
+  background-repeat: no-repeat;
+  background-position: 280px -70px;
+  background-size: 1050px;
+}
+main section.principal {
+  max-width: 50%;
+  margin-bottom: 50px;
+}
+main section.principal h1 {
+  color: rgb(38, 64, 101);
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+main section.principal p {
+  color: rgb(144, 144, 144);
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+main section.principal .buttons-main {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main section.principal .buttons-main a {
+  padding: 10px 30px;
+}
+main section.principal .buttons-main a:first-child {
+  text-decoration: none;
+  background-color: rgb(38, 64, 101);
+  color: white;
+  border-radius: 32px;
+}
+main section.principal .buttons-main a:last-child {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(38, 64, 101);
+  border-radius: 32px;
+  gap: 20px;
+}
+main section.principal .buttons-main a:last-child span img {
+  border-radius: 50%;
+  box-shadow: 0px 5px 30px 0.5px gray;
+  padding: 5px;
+}
+main section.paragraphs {
+  position: absolute;
+}
+main section.paragraphs div {
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  width: 280px;
+  padding: 20px;
+  border-radius: 16px;
+}
+main section.paragraphs div img {
+  width: 20px;
+}
+main section.paragraphs div h4 {
+  color: rgb(38, 64, 101);
+}
+main section.paragraphs .p1 {
+  margin-left: 1050px;
+  margin-top: -240px;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+main section.paragraphs .p2 {
+  margin-left: 920px;
+  font-size: 14px;
+}
+main section.categories {
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  max-width: 40%;
+  background-color: white;
+}
+main section.categories article {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+  text-align: center;
+  gap: 10px 0px;
+}
+main section.categories article h3 {
+  color: rgb(38, 64, 101);
+}
+main section.categories article p {
+  color: rgb(144, 144, 144);
+}
+main section.categories img {
+  width: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

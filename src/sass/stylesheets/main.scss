@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+// 1. Vendors
+@use 'vendors/normalize';
+
+// 2. Base stuff
+@use 'base/base';
+@use 'base/fonts';
+@use 'base/helpers';
+@use 'base/typography';
+
+// 3. Layout-related sections
+@use 'layout/footer';
+@use 'layout/header';
+@use 'layout/body';
+@use 'layout/content';
+
+// 4. Components
+@use 'components/button';
+
+// 5. Pages
+@use 'pages/home';
+
+// 6. Themes
+@use 'themes/default';
+
+// 7. Abstracts
+@use 'abstracts/variables';
+
+$color-primary: rgba(38 64 101);
+$color-secundary: rgba(144 144 144);
+
+header.header {
+    display: flex;
+    margin: 28px 0px;
+    align-items: center;
+    justify-content: space-between;
+
+    nav.menu {
+        display: flex;
+
+        ul.ul {
+            display: flex;
+            list-style: none;
+            color: $color-primary;
+            gap: 30px
+        }
+    }
+
+    ul.menu-left {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        gap: 30px;
+
+        li {
+            a {
+                padding: 10px 20px;
+                font-weight: 300;
+            }
+        }
+
+        li:last-child {
+            a {
+                border-radius: 32px;
+                background-color: $color-primary;
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        li:nth-child(3) {
+            a {
+                border-radius: 32px;
+                text-decoration: underline;
+                color: $color-primary;
+            }
+        }        
+
+    }
+}
+
+div.container {
+    margin: 0px 120px;
+    background-image: url("../../../img/spa-back.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: auto;
+
+}
+
+main {
+    padding-top: 70px;
+    background-image: url("../../../img/beauty-principal.png");
+    background-repeat: no-repeat;
+    background-position: 280px -70px;
+    background-size: 1050px;
+    section.principal {
+        max-width: 50%;
+        margin-bottom: 50px;
+
+        h1 {
+            color: $color-primary;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: $color-secundary;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .buttons-main {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            a {
+                padding: 10px 30px;
+            }
+
+            a:first-child {
+                text-decoration: none;
+                background-color: $color-primary;
+                color: white;
+                border-radius: 32px;
+            }
+
+            a:last-child {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: $color-primary;
+                border-radius: 32px;
+                gap: 20px;
+
+                span{
+
+                    img {
+                        border-radius: 50%;
+                        box-shadow: 0px 5px 30px 0.5px gray;
+                        padding: 5px;
+                    }
+                }
+            }            
+        }
+    }
+
+    section.paragraphs {
+        position: absolute;
+
+        div {
+            background-color: #FFFFFF80;
+            width: 280px;
+            padding: 20px;
+            border-radius: 16px;
+            img {
+                width: 20px;
+            }
+            h4 {
+                color: $color-primary;
+            }
+        }
+
+        .p1 {
+            margin-left: 1050px;
+            margin-top: -240px;
+            margin-bottom: 40px;
+            font-size: 14px;
+        }
+
+        .p2 {
+            margin-left: 920px;
+            font-size: 14px;
+        }
+    }
+
+    section.categories {
+        display: flex;
+        padding: 24px;
+        justify-content: space-between;
+        max-width: 40%;
+        background-color: white;
+
+        article {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            align-items: center;
+            text-align: center;
+            gap: 10px 0px;
+
+            h3 {
+                color: $color-primary;
+            }
+
+            p {
+                color: $color-secundary;
+            }
+        }
+
+        img {
+            width: 50px;
+        }
+
+    }
+}
