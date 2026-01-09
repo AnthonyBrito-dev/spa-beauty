@@ -95,11 +95,12 @@ main {
     background-repeat: no-repeat;
     background-position: 280px -70px;
     background-size: 1050px;
+    
     section.principal {
         max-width: 50%;
         margin-bottom: 50px;
 
-        #img1 {
+        img {
             position: absolute;
         }
 
