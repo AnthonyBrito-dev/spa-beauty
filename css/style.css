@@ -81,8 +81,8 @@ main section.principal {
 main section.principal img {
    position: absolute;
    max-width: 800px;
-   padding-left: 450px;
-   margin-top: -300px;
+   marging-left: 450px;
+   margin-top: -100px;
 }
 main section.principal h1 {
   color: rgb(38, 64, 101);
