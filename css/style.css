@@ -80,9 +80,9 @@ main section.principal {
 }
 main section.principal img.beauty-principal {
    position: absolute;
-   max-width: 800px;
-   left: 50px;
-   margin-top: -350px;
+   max-width: 880px;
+   left: 400px;
+   margin-top: -410px;
 }
 main section.principal h1 {
   color: rgb(38, 64, 101);
