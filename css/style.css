@@ -81,7 +81,7 @@ main section.principal {
 main section.principal img.beauty-principal {
    position: absolute;
    max-width: 800px;
-   margin-left: auto;
+   left: 50px;
    margin-top: -350px;
 }
 main section.principal h1 {
